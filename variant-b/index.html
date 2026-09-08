@@ -53,10 +53,26 @@
     align-items: center;
     margin-bottom: 96px;
   }
-  .logo {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: -0.02em;
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .brand-icon {
+    height: 44px;
+    width: auto;
+    display: block;
+  }
+  .brand-wordmark {
+    height: 36px;
+    width: auto;
+    display: block;
+  }
+  .founded {
+    color: var(--text-faint);
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    white-space: nowrap;
   }
   .badge {
     color: var(--lime);
@@ -162,14 +178,21 @@
     header { margin-bottom: 48px; }
     .container { padding: 20px 16px; }
     footer { margin-top: 48px; }
+    .brand { gap: 10px; }
+    .brand-icon { height: 32px; }
+    .brand-wordmark { height: 26px; }
+    .founded { font-size: 11px; }
   }
 </style>
 </head>
 <body>
 <div class="container">
   <header>
-    <div class="logo">Shoreline TechStudio</div>
-    <span style="color: var(--text-faint); font-size: 12px;">Sedan 2024</span>
+    <div class="brand">
+      <img src="logo-icon.png" alt="" class="brand-icon" width="44" height="44">
+      <img src="logo-wordmark.png" alt="Shoreline Techstudio" class="brand-wordmark" width="180" height="36">
+    </div>
+    <span class="founded">Grundad 2026</span>
   </header>
 
   <main>
