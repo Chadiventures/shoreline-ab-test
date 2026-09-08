@@ -159,6 +159,29 @@
     font-size: 14px;
     font-weight: 500;
   }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .trust-item::before {
+    content: '✓';
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: rgba(217, 224, 102, 0.15);
+    border: 1px solid rgba(217, 224, 102, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--lime);
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
   .hero-proof-icon {
     width: 22px;
     height: 22px;
@@ -286,10 +309,11 @@
     </h1>
     <p class="hero-sub">Ett enkelt månadsabonnemang istället för en stor engångskostnad. Hemsida och drift ingår. Klart på 1 till 5 veckor.</p>
     <div class="hero-proof">
-      <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>Fast pris från 14 900 kr</div>
-      <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>Klart på 1 till 5 veckor</div>
-      <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>PageSpeed 97 till 99</div>
-      <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>GDPR-anpassat</div>
+      <div class="trust-item">1 500 kr/månad</div>
+      <div class="trust-item">Hemsida + drift inkluderat</div>
+      <div class="trust-item">Min 12 månaders bindningstid</div>
+      <div class="trust-item">Byggd med senaste AI-tekniken</div>
+      <div class="trust-item">GDPR-anpassat</div>
     </div>
     <a href="https://cal.com/diana-olsen-jxxghp/kostnadsfritt-samtal?utm_source=experiment&utm_medium=landing&utm_campaign=uppgift2&utm_content=variant-b"
        class="cta"
