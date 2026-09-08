@@ -148,16 +148,19 @@
   .hero-proof {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px 32px;
+    gap: 12px 20px;
     margin-bottom: 36px;
+    max-width: 100%;
   }
   .hero-proof-item {
     display: flex;
     align-items: center;
     gap: 10px;
     color: var(--text);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
   }
   .hero-proof-icon {
     width: 22px;
@@ -250,6 +253,12 @@
     color: var(--lime);
     font-size: 8px;
   }
+  @media (min-width: 768px) {
+    .hero-proof {
+      flex-wrap: nowrap;
+      gap: 18px;
+    }
+  }
   @media (max-width: 768px) {
     .founded { display: none; }
     .brand-icon { height: 36px; }
@@ -288,7 +297,6 @@
     <p class="hero-sub">Er webbplats svarar kunder klockan 02. Bokar möten innan ni vaknar. Fast pris. Klart på 1 till 5 veckor.</p>
     <div class="hero-proof">
       <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>Fast pris från 14 900 kr</div>
-      <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>Klart på 1 till 5 veckor</div>
       <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>Byggd med senaste AI-tekniken</div>
       <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>PageSpeed 97 till 99</div>
       <div class="hero-proof-item"><span class="hero-proof-icon">✓</span>GDPR-anpassat</div>
