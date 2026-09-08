@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shoreline TechStudio</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  body {
+    margin: 0;
+    background: #0a0d14;
+    color: #ede8f5;
+    font-family: system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .msg {
+    opacity: 0.6;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="msg">Ett ögonblick...</div>
+<script>
+  // Passera vidare UTM och andra query params så du kan spåra i GA4
+  const params = new URLSearchParams(window.location.search);
+  const variant = Math.random() < 0.5 ? 'a' : 'b';
+  params.set('src', 'split');
+  params.set('assigned', variant);
+  const target = `https://${variant}.shorelinetechstudio.se/?${params.toString()}`;
+  location.replace(target);
+</script>
+</body>
+</html>
